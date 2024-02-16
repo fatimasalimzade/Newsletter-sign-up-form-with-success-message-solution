@@ -1,0 +1,112 @@
+  body {
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+  }
+  .container {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .left {
+    width: 60%;
+    padding: 20px;
+  }
+  .right {
+    padding: 10px;
+  }
+  img {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 10px;
+    color: black;
+    font-size: small;
+    font-weight: bolder;
+  }
+  input {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+  }
+  button {
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: hsl(235, 18%, 26%);
+    font-weight: bolder;
+  }
+  button:hover {
+    background-color: hsl(4, 100%, 67%);
+  }
+  h1 {
+    font-size: 50px;
+    color: hsl(234, 29%, 20%);
+  }
+  .hide {
+    display: none;
+  }
+  .success {
+    background-color: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .success h1 {
+    font-size: 40px;
+  }
+  .icon2 {
+    width: 50px;
+  }
+  .success button {
+    width: 100%;
+  }
+  .icon{
+    margin-right: 10px
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column-reverse;
+      width: 95%;
+      padding: 0;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: white;
+    }
+    .container h1 {
+      font-size: 30px;
+    }
+    .left {
+      width: 100%;
+      padding: 20px;
+    }
+    .right {
+      width: 100%;   
+      padding: 0;
+      margin: 0;
+    }
+    .right img {
+      content: url("./assets/images/illustration-sign-up-mobile.svg");
+    }
+    form {
+      width: 90%;
+    }
+    .success {
+      min-height: 100vh;
+    }
+  }
